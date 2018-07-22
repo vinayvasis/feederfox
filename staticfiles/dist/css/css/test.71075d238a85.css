@@ -1,0 +1,5 @@
+.carousel-inner .active.left { left: -20%; }
+.carousel-inner .next        { left:  20%; }
+.carousel-control.left,.carousel-control.right {background-image:none;}
+
+.col-lg-2 {width: 20%;}

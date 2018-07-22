@@ -24,19 +24,19 @@
 {#   <script src="dist/js/owl.carousel.min.js"></script>#}
 {#   <script src="https://vjs.zencdn.net/4.0.4/video.js"></script>#}
 {#  <meta name="viewport" content="width=device-width, initial-scale=1">#}
-  <style type="text/css">
-     .video-js .vjs-control-bar { display: block; }
-
-    /* Make the CDN fonts accessible from the CSS */
-  @font-face {
-    font-family: 'VideoJS';
-    src: url('https://vjs.zencdn.net/f/1/vjs.eot');
-    src: url('https://vjs.zencdn.net/f/1/vjs.eot?#iefix') format('embedded-opentype'),
-      url('https://vjs.zencdn.net/f/1/vjs.woff') format('woff'),
-      url('https://vjs.zencdn.net/f/1/vjs.ttf') format('truetype');
-  }
-  .video-js { margin: 20px auto; }
-  </style>
+{#  <style type="text/css">#}
+{#     .video-js .vjs-control-bar { display: block; }#}
+{##}
+{#    /* Make the CDN fonts accessible from the CSS */#}
+{#  @font-face {#}
+{#    font-family: 'VideoJS';#}
+{#    src: url('https://vjs.zencdn.net/f/1/vjs.eot');#}
+{#    src: url('https://vjs.zencdn.net/f/1/vjs.eot?#iefix') format('embedded-opentype'),#}
+{#      url('https://vjs.zencdn.net/f/1/vjs.woff') format('woff'),#}
+{#      url('https://vjs.zencdn.net/f/1/vjs.ttf') format('truetype');#}
+{#  }#}
+{#  .video-js { margin: 20px auto; }#}
+{#  </style>#}
 </head>
 <body>
 {% block pagecontent %}
@@ -313,18 +313,18 @@
 </div>
 </div>
 
-<!-- Video Player -->
-<div class="container">
- <video id="my_video_1" class="video-js vjs-default-skin"
-      controls preload="none" width="100%" height="524px" data-setup='{}'
-      poster='http://video-js.zencoder.com/oceans-clip.jpg'>
-    <source src="https://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />
-    <source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm' />
-  </video>
-</div>
-
-
-<!--Ends Video Player -->
+{#<!-- Video Player -->#}
+{#<div class="container">#}
+{# <video id="my_video_1" class="video-js vjs-default-skin"#}
+{#      controls preload="none" width="100%" height="524px" data-setup='{}'#}
+{#      poster='http://video-js.zencoder.com/oceans-clip.jpg'>#}
+{#    <source src="https://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />#}
+{#    <source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm' />#}
+{#  </video>#}
+{#</div>#}
+{##}
+{##}
+{#<!--Ends Video Player -->#}
 
 <div class="container">
 <h2 class="heading-chnls">NewsChannels</h2>
