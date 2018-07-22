@@ -1,0 +1,1382 @@
+{% extends 'base.html' %}
+{% load static %}
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}Feederfox Media{% endblock %}</title>
+{#  <link href="dist/css/bootstrap.min.css" rel="stylesheet">#}
+{#  <!-- <link href="dist/css/style.css" rel="stylesheet"> -->#}
+{#  <link href="dist/css/animate.css" rel="stylesheet">#}
+{#  <link rel="stylesheet" href="dist/css/social.css">#}
+{#  <link rel="stylesheet" href="dist/css/slider.css">#}
+{#  <link href="dist/css/sideslider.css" rel="stylesheet">#}
+{#  <link href="dist/css/new_style.css" rel="stylesheet">#}
+{#  <link rel="stylesheet" href="dist/css/owl.carousel.min.css">#}
+{#  <link rel="stylesheet" href="dist/css/owl.theme.default.min.css">#}
+{#  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">#}
+{#  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">#}
+{#  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">#}
+{#  <script src="dist/js/jquery-1.12.4.min.js"></script>#}
+{#  <script src="dist/js/jquery.easing.1.3.js"></script>#}
+{#  <script src="dist/js/bootstrap.min.js"></script>#}
+{#  <script src="dist/js/custom.js"></script>#}
+{#   <script src="dist/js/owl.carousel.min.js"></script>#}
+{#   <script src="https://vjs.zencdn.net/4.0.4/video.js"></script>#}
+{#  <meta name="viewport" content="width=device-width, initial-scale=1">#}
+  <style type="text/css">
+     .video-js .vjs-control-bar { display: block; }
+
+    /* Make the CDN fonts accessible from the CSS */
+  @font-face {
+    font-family: 'VideoJS';
+    src: url('https://vjs.zencdn.net/f/1/vjs.eot');
+    src: url('https://vjs.zencdn.net/f/1/vjs.eot?#iefix') format('embedded-opentype'),
+      url('https://vjs.zencdn.net/f/1/vjs.woff') format('woff'),
+      url('https://vjs.zencdn.net/f/1/vjs.ttf') format('truetype');
+  }
+  .video-js { margin: 20px auto; }
+  </style>
+</head>
+<body>
+{% block pagecontent %}
+<div class="bg-header">
+  <div class="container">
+   <div class="row">
+       <div class="col-md-6">
+        <div id="weather-frame" class="container">
+          <div id="upper-detail">
+            <div id="city-name"></div>
+          </div>
+          <div id="lower-detail">
+            <div class="row">
+              <div id="temp" class="col-xs-6">
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="{% static 'dist/images/only_logo.png' %}" class="img-responsive" width="232px" height="135px" style="margin-top:-44px;
+        margin-left:-40px;">
+      </div>
+      <div class="col-md-2" >
+        <div class="dropdown drop1">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Publisher
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu d1">
+              <li><a target="_blank" href="{% url 'psignup' %}">Sign Up</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2">
+         <div class="dropdown drop1">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Customer
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu d1">
+              <li><a href="#">Sign Up</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2">
+         <div class="dropdown drop1">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Advertiser
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu d1">
+              <li><a href="#">Sign Up</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+</div>
+</div>
+
+
+<div class="runtext-container">
+<div class="main-runtext">
+<marquee direction="" onmouseover="this.stop();" onmouseout="this.start();">
+
+<div class="holder">
+
+     <div class="text-container">
+   &nbsp; &nbsp; <img src="http://jamaicaelectrician.org/images/icon.png"> &nbsp; <a data-fancybox-group="gallery" class="fancybox" title="THE ELECTRIC LIGHTING ACT: section 35">THE ELECTRIC LIGHTING ACT makes it mandatory to use the services of a Licensed Electrician</a>
+    </div>
+
+     <div class="text-container">
+   &nbsp; &nbsp; <img src="http://jamaicaelectrician.org/images/icon.png"> &nbsp; <a data-fancybox-group="gallery" class="fancybox"  title="Electrical Licence and Notice Form">Customers must ensure licensed electricians present a valid electrical license and a notice form</a>
+    </div>
+
+     <div class="text-container">
+   &nbsp; &nbsp;&nbsp; <a data-fancybox-group="gallery" class="fancybox"  title="Customers should demand a receipt">Customers should demand a receipt from all licensed electricians</a>
+    </div>
+
+     <div class="text-container">
+   &nbsp; &nbsp; <a data-fancybox-group="gallery" class="fancybox"  title="Electricians must provide business address and phone number">All Licensed Electricians must provide business address and phone number</a>
+    </div>
+
+     <div class="text-container">
+   &nbsp; &nbsp; <a data-fancybox-group="gallery" class="fancybox"  title="All jobs 70Amps and over require an electrical drawing done by a certified engineer">Jobs of 70amps and over should be done and submitted by a licensed electrician</a>
+    </div>
+
+     <div class="text-container">
+   &nbsp; &nbsp; <a data-fancybox-group="gallery" class="fancybox"  title="Electrical work charges should only be paid to a licensed electrician">Electrical services/certification charge should only be paid to a licensed electrician</a>
+    </div>
+
+     <div class="text-container">
+   &nbsp;   <a data-fancybox-group="gallery" class="fancybox"  title="Solar installation must be done by a licensed electrician">All electrical work on solar installations must be done by a licensed electrician</a>
+    </div>
+
+     <div class="text-container">
+   &nbsp; <a data-fancybox-group="gallery" class="fancybox"  title="Customer should know the licensed electrician on their REPORT">Customer must ensure they know the licensed electrician whose name is on their REPORT</a>
+    </div>
+
+</div>
+
+</marquee>
+</div>
+</div>
+
+
+
+
+{#    <a href="{% url 'home' %}">Go Home</a>#}
+{#  <a href="{% url 'psignup' %}">About This Site</a>#}
+
+
+
+
+
+
+ <!-- new navigation -->
+ <nav class="navbar navbar-default w3_megamenu" role="navigation">
+  <div class="navbar-header">
+    <button type="button" data-toggle="collapse" data-target="#defaultmenu" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand"><i class="fa fa-home"></i></a>
+  </div><!-- end navbar-header -->
+
+  <div id="defaultmenu" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+     <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Home <b class="caret"></b></a>
+        <ul class="dropdown-menu" role="menu">
+
+          <li><a href="">NewsChannels</a></li>
+          <li><a href="">Newspapers</a></li>
+          <li><a href="">Magazines</a></li>
+        </ul>
+      </li>
+      <!-- Mega Menu -->
+        <li class="dropdown w3_megamenu-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Political Forum<b class="caret"></b></a>
+          <ul class="dropdown-menu fullwidth">
+            <li class="w3_megamenu-content withdesc">
+              <div class="row">
+                <div class="col-sm-6">
+                  <ul>
+                    <li><a data-description="" href="">
+                      <div class="card elevation-2dp box">
+                          <div class="row">
+                          <div class="col-md-5"></div>
+                          <div class="col-md-3">
+                          <img src="{% static 'dist/images/modi.jpg' %}" alt="" style="margin-left:-5px;">
+                        </div>
+                        </div>
+
+
+                        <div class="supporting-text">
+                          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</p>
+                        </div>
+                      </div>
+                    </a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <ul>
+                   <li><a data-description="" href="">
+                       <div class="card elevation-2dp box">
+                        <div class="row">
+                          <div class="col-md-5"></div>
+                          <div class="col-md-3">
+                          <img src="{% static 'dist/images/modi.jpg' %}" alt="" style="margin-left:-5px;">
+                        </div>
+                        </div>
+                        <div class="supporting-text">
+                          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</p>
+                        </div>
+                      </div>
+                    </a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="w3_megamenu-content withdesc">
+              <div class="row">
+                <div class="col-sm-6" style="margin-top:-50px;">
+                  <ul>
+                    <li><a data-description="" href="">
+                      <div class="card elevation-2dp box">
+                        <div class="row">
+                          <div class="col-md-5"></div>
+                          <div class="col-md-3">
+                          <img src="{% static 'dist/images/modi.jpg' %}" alt="" style="margin-left:-5px;">
+                        </div>
+                        </div>
+                        <div class="supporting-text">
+                          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</p>
+                        </div>
+                      </div>
+                    </a></li>
+                  </ul>
+                </div>
+
+                <div class="col-sm-6" style="margin-top:-50px;">
+                  <ul>
+                   <li><a data-description="" href="">
+                       <div class="card elevation-2dp box">
+                        <div class="row">
+                          <div class="col-md-5"></div>
+                          <div class="col-md-3">
+                          <img src="{% static 'dist/images/modi.jpg' %}" alt="" style="margin-left:-5px;">
+                        </div>
+                        </div>
+                        <div class="supporting-text">
+                          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</p>
+                        </div>
+                      </div>
+                    </a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">NewsFeeds <b class="caret"></b></a>
+        <ul class="dropdown-menu" role="menu">
+
+          <li><a href="">Headlines/Breaking News</a></li>
+          <li><a href="">Educational</a></li>
+          <li><a href="">Entertainment</a></li>
+          <li><a href="">Business</a></li>
+          <li><a href="">Sports</a></li>
+          <li><a href="">Lifestyle</a></li>
+          <li><a href="">Social</a></li>
+          <li><a href="">World/International</a></li>
+          <li><a href="">Global</a></li>
+        </ul>
+      </li>
+        <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Article/Blog <b class="caret"></b></a>
+        <ul class="dropdown-menu" role="menu">
+
+          <li><a href="">Business/Economic</a></li>
+          <li><a href="">Write Article</a></li>
+          <li><a href="">E-books</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Business <b class="caret"></b></a>
+        <ul class="dropdown-menu" role="menu">
+
+          <li><a href="">Business/Economic</a></li>
+          <li><a href="">Write Article</a></li>
+          <li><a href="">E-books</a></li>
+        </ul><!-- end dropdown-menu -->
+      </li><!-- end standard drop down -->
+      <!-- end dropdown w3_megamenu-fw -->
+    </ul><!-- end nav navbar-nav -->
+  </div><!-- end #navbar-collapse-1 -->
+
+</nav><!-- end navbar navbar-default w3_megamenu -->
+
+<!-- Sliding div starts here -->
+  <div id="slider_f" style="right:-342px;">
+    <div id="sidebar_f" onclick="open_panel()">
+      <img src="{%  static 'dist/images/download.png' %}"/>
+    </div>
+    <div id="header_f">
+      <form class="fdbck_f" action="">
+        <h2>Enquiry</h2>
+                <h3>We value your enquiry</h3>
+        <input type="text" name="name"  placeholder="Name"  />
+        <input type="text" name="email"  placeholder="Email" />
+        <input type="text" name="phone"  placeholder="Phone/Mobile" />
+
+        <textarea type="text" value="message" placeholder="Enquiry"></textarea><br/>
+        <button>Submit</button>
+      </form>
+    </div>
+  </div>
+<!-- Sliding div ends here -->
+
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
+      <img src="{%  static 'dist/images/Samsung-Galaxy-S-4-Ads-banner-728.jpg' %}" style="width:100%;">
+    </div>
+</div>
+</div>
+
+<!-- Video Player -->
+<div class="container">
+ <video id="my_video_1" class="video-js vjs-default-skin"
+      controls preload="none" width="100%" height="524px" data-setup='{}'
+      poster='http://video-js.zencoder.com/oceans-clip.jpg'>
+    <source src="https://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />
+    <source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm' />
+  </video>
+</div>
+
+
+<!--Ends Video Player -->
+
+<div class="container">
+<h2 class="heading-chnls">NewsChannels</h2>
+<div class="news_chnl_bg">
+  <h3 style="color:#fff;text-align: center;"> National Channels</h3><br>
+<div class="owl-carousel owl-theme">
+    <div class="item">
+      <a href="#">
+      <div class="box-model">
+       <img class="img-responsive" src="{% static 'dist/images/national/bbc_news.png' %}" style="height:150px;">
+    </div>
+  </a>
+    </div>
+    <div class="item">
+        <a href="#">
+      <div class="box-model">
+       <img class="img-responsive" src="{% static 'dist/images/national/tv9.jpg' %}" alt="" style="height:150px;">
+    </div>
+  </a>
+    </div>
+    <div class="item">
+        <a href="#">
+      <div class="box-model">
+       <img class="img-responsive" src="{% static 'dist/images/national/NDTV.png' %}" alt="" style="height:150px;">
+    </div>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+      <div class="box-model">
+       <img class="img-responsive" src="{% static 'dist/images/national/Aaj_Tak_logo.png' %}" alt="" style="height:150px;">
+    </div>
+  </a>
+    </div>
+    <div class="item">
+        <a href="#">
+      <div class="box-model">
+       <img class="img-responsive" src="{% static 'dist/images/national/cnw.png' %}" alt="" style="height:150px;">
+    </div>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+      <div class="box-model">
+      <img class="img-responsive" src="{% static 'dist/images/national/tv9.jpg' %}" alt="" style="height:150px;">
+    </div>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+      <div class="box-model">
+       <img class="img-responsive" src="{% static 'dist/images/national/JIA-News.jpg' %}" alt="" style="height:150px;">
+    </div>
+  </a>
+    </div>
+    <div class="item">
+       <a href="#">
+      <div class="box-model">
+       <img class="img-responsive" src="{%  static 'dist/images/national/Star_News.png' %}" alt="" style="height:150px;">
+    </div>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+      <div class="box-model">
+       <img class="img-responsive" src="{% static 'dist/images/national/zee_media.jpg' %}" alt="" style="height:150px;">
+    </div>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+      <div class="box-model">
+       <img class="img-responsive" src="{% static 'dist/images/national/india_today.png' %}" alt="" style="height:150px;">
+    </div>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+      <div class="box-model">
+       <img class="img-responsive" src="{% static 'dist/images/national/NDTV.png' %}" alt="" style="height:150px;">
+    </div>
+  </a>
+    </div>
+    <div class="item">
+        <a href="#">
+      <div class="box-model">
+       <img class="img-responsive" src="{% static 'dist/images/national/NDTV.png' %}" alt="" style="height:150px;">
+    </div>
+  </a>
+    </div>
+</div>
+
+<br>
+<br>
+
+<h3 style="color:#fff;margin-top:-20px;text-align: center;"> Regional / Local Channels</h3><br><br>
+<div class="owl-carousel owl-theme">
+    <div class="item">
+      <a href="#">
+        <div class="box-model">
+       <div class="content_chanel">
+    <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{% static 'dist/images/regional_logos/Vidhan-Sauda-Bangalore.jpg' %}" style="height:150px;">
+      <div class="content-details fadeIn-top fadeIn-right">
+        <h3 style="text-align: center;">ಕರ್ನಾಟಕ</h3>
+        <p>ಕನ್ನಡ ಸುದ್ದಿ ಚಾನಲ್ಗಳಿಗಾಗಿ ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ</p>
+      </div>
+    </a>
+  </div>
+</div>
+<h4 style="color:#fff;text-align: center;">Karnataka</h4>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+        <div class="box-model">
+       <div class="content_chanel">
+    <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{% static 'dist/images/regional_logos/Chidambaram.jpg' %}" style="height:150px;">
+      <div class="content-details fadeIn-top fadeIn-right">
+        <h3 style="text-align: center;">தமிழ்நாடு</h3>
+        <p>தமிழ் செய்திச் சேனல்களுக்காக இங்கே கிளிக் செய்க</p>
+      </div>
+    </a>
+  </div>
+</div>
+<h4 style="color:#fff;text-align: center;">Tamil Nadu</h4>
+  </a>
+  </div>
+    <div class="item">
+      <a href="#">
+        <div class="box-model">
+       <div class="content_chanel">
+    <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{% static 'dist/images/regional_logos/maxresdefault.jpg' %}" style="height:150px;">
+      <div class="content-details fadeIn-top fadeIn-right">
+        <h3 style="text-align: center;">बिहार</h3>
+        <p>बिहार न्यूजचैनल्स के लिए यहां क्लिक करें</p>
+      </div>
+    </a>
+  </div>
+</div>
+<h4 style="color:#fff;text-align: center;">Bihar</h4>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+        <div class="box-model">
+       <div class="content_chanel">
+    <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{% static 'dist/images/regional_logos/assam-tourist-places.jpg' %}" style="height:150px;">
+      <div class="content-details fadeIn-top fadeIn-right">
+        <h3 style="text-align: center;">Assam</h3>
+        <p>This is a short description</p>
+      </div>
+    </a>
+  </div>
+</div>
+<h4 style="color:#fff;text-align: center;">Assam</h4>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+        <div class="box-model">
+       <div class="content_chanel">
+    <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{% static 'dist/images/regional_logos/image_1.jpg'%}" style="height:150px;">
+      <div class="content-details fadeIn-top fadeIn-right">
+        <h3 style="text-align: center;">ગુજરાત</h3>
+        <p>સમાચાર ચેનલ માટે અહીં ક્લિક કરો</p>
+      </div>
+    </a>
+  </div>
+</div>
+<h4 style="color:#fff;text-align: center;">Gujarat</h4>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+        <div class="box-model">
+       <div class="content_chanel">
+    <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{% static 'dist/images/regional_logos/Vidhan-Sauda-Bangalore.jpg' %}" style="height:150px;">
+      <div class="content-details fadeIn-top fadeIn-right">
+        <h3 style="text-align: center;">Karnataka</h3>
+        <p></p>
+      </div>
+    </a>
+  </div>
+</div>
+<h4 style="color:#fff;text-align: center;">Karnataka</h4>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+        <div class="box-model">
+       <div class="content_chanel">
+    <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{% static 'dist/images/regional_logos/Vidhan-Sauda-Bangalore.jpg' %}" style="height:150px;">
+      <div class="content-details fadeIn-top fadeIn-right">
+        <h3 style="text-align: center;">Karnataka</h3>
+        <p>This is a short description</p>
+      </div>
+    </a>
+  </div>
+</div>
+<h4 style="color:#fff;text-align: center;">Karnataka</h4>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+        <div class="box-model">
+       <div class="content_chanel">
+    <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{% static 'dist/images/regional_logos/Vidhan-Sauda-Bangalore.jpg' %}" style="height:150px;">
+      <div class="content-details fadeIn-top fadeIn-right">
+        <h3 style="text-align: center;">Karnataka</h3>
+        <p>This is a short description</p>
+      </div>
+    </a>
+  </div>
+</div>
+<h4 style="color:#fff;text-align: center;">Karnataka</h4>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+        <div class="box-model">
+       <div class="content_chanel">
+    <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{% static 'dist/images/regional_logos/Vidhan-Sauda-Bangalore.jpg' %}" style="height:150px;">
+      <div class="content-details fadeIn-top fadeIn-right">
+        <h3 style="text-align: center;">Karnataka</h3>
+        <p>This is a short description</p>
+      </div>
+    </a>
+  </div>
+</div>
+<h4 style="color:#fff;text-align: center;">Karnataka</h4>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+        <div class="box-model">
+       <div class="content_chanel">
+    <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{% static 'dist/images/regional_logos/Vidhan-Sauda-Bangalore.jpg' %}" style="height:150px;">
+      <div class="content-details fadeIn-top fadeIn-right">
+        <h3 style="text-align: center;">Karnataka</h3>
+        <p>This is a short description</p>
+      </div>
+    </a>
+  </div>
+</div>
+<h4 style="color:#fff;text-align: center;">Karnataka</h4>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+        <div class="box-model">
+       <div class="content_chanel">
+    <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{% static 'dist/images/regional_logos/Vidhan-Sauda-Bangalore.jpg' %}" style="height:150px;">
+      <div class="content-details fadeIn-top fadeIn-right">
+        <h3 style="text-align: center;">Karnataka</h3>
+        <p>This is a short description</p>
+      </div>
+    </a>
+  </div>
+</div>
+<h4 style="color:#fff;text-align: center;">Karnataka</h4>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+        <div class="box-model">
+       <div class="content_chanel">
+    <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{% static 'dist/images/regional_logos/Vidhan-Sauda-Bangalore.jpg' %}" style="height:150px;">
+      <div class="content-details fadeIn-top fadeIn-right">
+        <h3 style="text-align: center;">Karnataka</h3>
+        <p>This is a short description</p>
+      </div>
+    </a>
+  </div>
+</div>
+<h4 style="color:#fff;text-align: center;">Karnataka</h4>
+  </a>
+    </div>
+</div>
+</div>
+</div>
+<br>
+
+  <!--Newspapers-->
+<div class="container">
+  <h2 class="heading-news">NewsPapers</h2>
+  <div class="row">
+    <div class="col-md-10">
+      <div class="nws-bg">
+   <h3 style="color:#fff;text-align: center;">National Newspapers</h3><br>
+<div class="wrapper">
+  <div class="owl-carousel owl-theme">
+    <div class="item">
+      <div class="hovereffect"><img src="{% static 'dist/images/national_newspapers/hindu.jpg' %}" class="img-responsive reg-img">
+         <div class="overlay">
+               <a class="info" href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="hovereffect"><img src="{% static 'dist/images/national_newspapers/economic.jpg' %}" class="img-responsive reg-img">
+         <div class="overlay">
+               <a class="info" href="#">Read More</a>
+        </div>
+      </div>
+    </div><div class="item">
+      <div class="hovereffect"><img src="{% static 'dist/images/national_newspapers/times.jpg' %}" class="img-responsive reg-img">
+         <div class="overlay">
+               <a class="info" href="#">Read More</a>
+        </div>
+      </div>
+    </div><div class="item">
+      <div class="hovereffect"><img src="{% static 'dist/images/national_newspapers/times.jpg' %}" class="img-responsive reg-img">
+         <div class="overlay">
+               <a class="info" href="#">Read More</a>
+        </div>
+      </div>
+    </div><div class="item">
+      <div class="hovereffect"><img src="{% static 'dist/images/national_newspapers/western_times.jpg' %}" class="img-responsive reg-img">
+         <div class="overlay">
+               <a class="info" href="#">Read More</a>
+        </div>
+      </div>
+    </div><div class="item">
+      <div class="hovereffect"><img src="{% static 'dist/images/national_newspapers/indian_express.jpg' %}" class="img-responsive reg-img">
+         <div class="overlay">
+               <a class="info" href="#">Read More</a>
+        </div>
+      </div>
+    </div><div class="item">
+      <div class="hovereffect"><img src="{% static 'dist/images/national_newspapers/dna-kzmB--621x414@LiveMint.jpg' %}" class="img-responsive reg-img">
+         <div class="overlay">
+               <a class="info" href="#">Read More</a>
+        </div>
+      </div>
+    </div><div class="item">
+      <div class="hovereffect"><img src="{%  static 'dist/images/national_newspapers/_aeff3d8a-88c3-11e6-92b8-e7f1e026a3c4.png' %}" class="img-responsive reg-img">
+         <div class="overlay">
+               <a class="info" href="#">Read More</a>
+        </div>
+      </div>
+    </div><div class="item">
+      <div class="hovereffect"><img src="{% static 'dist/images/newspaper.jpg' %}" class="img-responsive reg-img">
+         <div class="overlay">
+               <a class="info" href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+<!--National Newspapers sliders Ends here-->
+
+  <h3 style="color:#fff;text-align: center;"> Regional / Local Newspapers</h3><br>
+<div class="c-carousel">
+  <div class="c-carousel__arrow c-carousel__arrow--left"></div>
+  <div class="c-carousel__arrow c-carousel__arrow--right"></div>
+  <ul class="c-carousel__slides">
+    <li>
+      <img src="{% static '' %}dist/images/newspaper_logos/karnataka1.jpg" class="reg_news_img">
+    </li>
+    <li><img src="{% static 'dist/images/newspaper_logos/kashmir.jpg' %}" class="reg_news_img"></li>
+    <li><img src="{% static 'dist/images/newspaper_logos/mp.jpg' %}" class="reg_news_img"></li>
+    <li><img src="{% static 'dist/images/newspaper_logos/TELANGANA.jpg' %}" class="reg_news_img"></li>
+    <li><img src="{% static 'dist/images/newspaper_logos/himachal.jpg' %}" class="reg_news_img"></li>
+    <li><img src="{% static 'dist/images/newspaper_logos/TRIPURA.jpg' %}" class="reg_news_img"></li>
+  </ul>
+</div>
+
+</div>
+    </div>
+    <div class="col-md-2">
+      <img src="{% static 'dist/images/ads.jpg' %}" style="width:100%;">
+      <img src="{% static 'dist/images/ads.jpg' %}" style="width:100%;margin-top:3px;">
+      <img src="{%  static 'dist/images/offers.png' %}" style="width:100%;height:93px;">
+    </div>
+  </div>
+
+</div>
+<!--Regional Newspapers sliders Ends here-->
+<br>
+
+
+
+<!--Magazines-->
+ <div class="container">
+   <h2 class="heading-magzn">Magazines</h2>
+  <div class="bg-overlay">
+        <div class="row">
+        <div align="center">
+            <button class="btn btn-default filter-button" data-filter="all">All</button>
+            <button class="btn btn-default filter-button" data-filter="hdpe">Entertainment</button>
+            <button class="btn btn-default filter-button" data-filter="sprinkle">Sports</button>
+            <button class="btn btn-default filter-button" data-filter="spray">Health</button>
+            <button class="btn btn-default filter-button" data-filter="irrigation">Business</button>
+        </div>
+        <br/>
+
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-2 col-xs-6 filter hdpe">
+             <div class="hovereffect">
+              <img class="img-responsive" src="{% static 'dist/images/m1.jpg' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+
+
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-2 col-xs-6 filter sprinkle">
+               <div class="hovereffect">
+              <img class="img-responsive" src="{% static 'dist/images/m2.jpg' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-3 col-xs-6 filter hdpe">
+               <div class="hovereffect">
+              <img class="img-responsive" src="{% static 'dist/images/m3.png' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-3 col-xs-6 filter irrigation">
+               <div class="hovereffect">
+              <img class="img-responsive" src="{% static 'dist/images/m4.jpg' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-3 col-xs-6 filter spray">
+               <div class="hovereffect">
+              <img class="img-responsive" src="{% static 'dist/images/m5.jpg' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-3 col-xs-6 filter irrigation">
+               <div class="hovereffect">
+              <img class="img-responsive" src="{% static 'dist/images/m6.jpg' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-3 col-xs-6 filter spray">
+               <div class="hovereffect">
+              <img class="img-responsive" src="{% static 'dist/images/m7.jpg' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-3 col-xs-6 filter irrigation">
+               <div class="hovereffect">
+              <img class="img-responsive" src="{% static 'dist/images/m8.jpg' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-3 col-xs-6 filter irrigation">
+               <div class="hovereffect">
+              <img class="img-responsive" src="{% static 'dist/images/m2.jpg' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-3 col-xs-6 filter hdpe">
+               <div class="hovereffect">
+              <img class="img-responsive" src="{% static 'dist/images/m1.jpg' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-3 col-xs-6 filter spray">
+               <div class="hovereffect">
+              <img class="img-responsive" src="{% static 'dist/images/m8.jpg' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-3 col-xs-6 filter sprinkle">
+               <div class="hovereffect">
+              <img class="img-responsive" src="{% static 'dist/images/m3.png' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-3 col-xs-6 filter sprinkle">
+               <div class="hovereffect">
+              <img class="img-responsive" src="{% static 'dist/images/m4.jpg' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-3 col-xs-6 filter sprinkle">
+               <div class="hovereffect">
+              <img class="img-responsive" src="{% static 'dist/images/m6.jpg' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-3 col-xs-6 filter sprinkle">
+               <div class="hovereffect">
+              <img class="img-responsive" src="{% static 'dist/images/m1.jpg' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+<br>
+
+<!--Ebooks-->
+
+<div class="container">
+  <h2 class="section_heading">E-books</h2>
+<div class="row">
+  <div class="col-md-10">
+      <div class="ebooks_bg">
+<section>
+  <div class="stage">
+    <div class="cbImage"><img src="https://grillenburgerbar.dk/music/img/grillen-30.jpeg" alt="Alt" /></div>
+    <div class="cbImage"><img src="https://grillenburgerbar.dk/music/img/grillen-29.jpeg" alt="Alt" /></div>
+    <div class="cbImage"><img src="https://grillenburgerbar.dk/music/img/grillen-28.jpeg" alt="Alt" /></div>
+    <div class="cbImage"><img src="https://grillenburgerbar.dk/music/img/grillen-29.jpeg" alt="Alt" /></div>
+    <div class="cbImage"><img src="https://grillenburgerbar.dk/music/img/grillen-27.jpeg" alt="Alt" /></div>
+    <div class="cbImage active"><img src="https://grillenburgerbar.dk/music/img/grillen-30.jpeg" alt="Alt" /></div>
+    <div class="cbImage"><img src="https://grillenburgerbar.dk/music/img/grillen-29.jpeg" alt="Alt" /></div>
+    <div class="cbImage"><img src="https://grillenburgerbar.dk/music/img/grillen-28.jpeg" alt="Alt" /></div>
+    <div class="cbImage"><img src="https://grillenburgerbar.dk/music/img/grillen-27.jpeg" alt="Alt" /></div>
+    <div class="cbImage"><img src="https://grillenburgerbar.dk/music/img/grillen-30.jpeg" alt="Alt" /></div>
+    <div class="cbImage"><img src="https://grillenburgerbar.dk/music/img/grillen-28.jpeg" alt="Alt" /></div>
+    <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+    <div class="controls">
+    <div class="cbcontrol" id="cbControlRight"><</div>
+    <div class="cbcontrol" id="cbControlLeft">></div>
+    <div class="clear"></div>
+  </div>
+</section>
+</div>
+  </div>
+  <div class="col-md-2">
+    <img src="{% static 'dist/images/ads.jpg' %}" style="width:100%;">
+    <img src="{% static 'dist/images/subscribe.png' %}" style="width:100%;margin-top:10px;height:146px;">
+  </div>
+</div>
+
+</div>
+<br>
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
+      <img src="{% static 'dist/images/header1000-2.jpg' %}" style="width:100%;">
+    </div>
+</div>
+</div>
+
+<!--Articles-->
+<div class="container">
+<h2 class="article_heading">Articles / Blogs</h2>
+<div class="articles_bg box-artcl effect5">
+<div id="content">
+  <div class="container1">
+    <div class="flipper">
+      <div class="front">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cherry-blossoms-unsplash.jpg" alt="cherry blossoms" class="artcle_img">
+        <p class="caption">Cherry blossom</p>
+      </div>
+      <div class="back">
+        <a href="https://en.wikipedia.org/wiki/Cherry_blossom" target="_blank">
+          <h1 class="article-header">Cherry blossom</h1>
+        </a>
+        <p class="date">23/07/1997</p>
+        <p class="description">A cherry blossom is the flower of any of several trees of genus Prunus, particularly the Japanese cherry, Prunus serrulata, which is called sakura after the Japanese (桜 or 櫻; さくら).</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container1">
+    <div class="flipper">
+      <div class="front">
+        <img src="https://images.pexels.com/photos/69776/tulips-bed-colorful-color-69776.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="white daisy" class="artcle_img">
+        <p class="caption">Tulip</p>
+      </div>
+      <div class="back">
+        <a href="https://en.wikipedia.org/wiki/Tulip" target="_blank">
+          <h1 class="article-header">Tulip</h1>
+        </a>
+        <p class="date">14/07/2001</p>
+        <p class="description">Tulips (Tulipa) form a genus of spring-blooming perennial herbaceous bulbiferous geophytes. The flowers are usually large, showy and brightly coloured, generally red, yellow, or white.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container1">
+    <div class="flipper">
+      <div class="front">
+        <img src="https://images.pexels.com/photos/796658/pexels-photo-796658.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Red Purple and Yellow Tulip" class="artcle_img">
+        <p class="caption">Lavender</p>
+      </div>
+      <div class="back">
+        <a href="https://en.wikipedia.org/wiki/Lavandula" target="_blank">
+          <h1 class="article-header">Lavender</h1>
+        </a>
+        <p class="date">06/08/2004</p>
+        <p class="description">Lavandula is a genus of 47 known species of flowering plants in the mint family. The most widely cultivated species is often referred to as lavender, and there is a color named for the shade of its the flowers. </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+<!--End of articles-->
+<br><br>
+
+
+
+
+
+
+
+
+<!-- start feedwind code -->
+<script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="85945/"></script>
+
+
+<!-- end feedwind code -->
+ <div class="bg-footer">
+  <div class="container">
+    <footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <img src="{% static 'dist/images/logo1.png' %}" class="img-responsive" style="height:150px;margin-left:-30px;">
+
+        <p class="footer-links">
+          <a href="#">Home</a>
+          ·
+          <a href="#">Blog</a>
+          ·
+          <a href="#">Pricing</a>
+          ·
+          <a href="#">About</a>
+          ·
+          <a href="#">Faq</a>
+          ·
+          <a href="#">Contact</a>
+        </p>
+
+        <p class="footer-company-name">FeederFox Media Pvt Ltd &copy; 2018</p>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>21 Revolution Street</span> Paris, France</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+1 555 123456</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">support@company.com</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+        </p>
+
+        <div class="footer-icons">
+
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+      </div>
+
+    </footer>
+  </div>
+
+
+
+<!-- <script src="dist/js/script.js"></script> -->
+<!-- <script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script> -->
+
+
+<script type="text/javascript">
+  (function ($) {
+    "use strict";
+
+    window.coverBrowser = window.coverBrowser || {};
+
+    var self = window.coverBrowser;
+
+    self.utils = (function () {
+
+        var getDir = function (of) {
+
+            var id = of,
+                start = id.indexOf("cbcontrol") + 10,
+                dir = id.substring(start, id.length);
+
+            return dir;
+
+        };
+
+        return {
+            getDir: getDir
+        };
+
+    })();
+
+    self.state = (function () {
+
+        var classes = [],
+            activeIndex = 0,
+            stageDim = {},
+            coverDim = {};
+
+        return {
+            classes: classes,
+            activeIndex: activeIndex
+        };
+
+    })();
+
+    self.actions = (function () {
+
+        var doMove = function () {
+
+            var activeIndex = self.state.activeIndex,
+                $covers = $(".cbImage"),
+                newActive, oldActive = $(".cbImage .active");
+
+            $covers.each(function (i, e) {
+
+                if (i < activeIndex) {
+
+                    this.className = "cbImage inactiveLeft inactiveLeft" + (activeIndex - i);
+                    this.style.zIndex = ((activeIndex + i) * 1);
+
+                }
+                else if (i === activeIndex) {
+                    this.className = "cbImage active";
+                    newActive = this;
+                }
+                else if (i > activeIndex) {
+
+                    this.className = "cbImage inactiveRight inactiveRight" + ((activeIndex - i) * -1);
+                    this.style.zIndex = ((activeIndex - i) * 1);
+
+                }
+
+            });
+
+            $(document).trigger("endmove.cvr", [{ "newActive": newActive, "oldActive": oldActive }]);
+
+        },
+
+            moveRight = function () {
+
+                if ($(document).trigger("startmoveright") !== false) {
+
+                    self.state.activeIndex = self.state.activeIndex - 1;
+
+                    doMove();
+
+                }
+            },
+
+            moveLeft = function () {
+
+                if ($(document).trigger("startmoveleft") !== false) {
+
+                    self.state.activeIndex = self.state.activeIndex + 1;
+
+                    doMove();
+
+                }
+            };
+
+        return {
+            moveRight: moveRight,
+            moveLeft: moveLeft,
+            doMove: doMove
+        };
+
+    })();
+
+    self.imgs = (function () {
+
+        var attachEvents = function () {
+
+            $(".cbImage").on("click", function (event) {
+                //move[dir] the number of times difference
+                //between index of active and index of clicked
+                var dir = this.className.search(/left/gi) !== -1 ? "Right" : "Left",
+                    $coll = $(".cbImage"),
+                    diff = dir === "Right" ? ($coll.index($(".cbImage.active")) - $coll.index(this)) :
+                        ($coll.index($(".cbImage.active")) - $coll.index(this)) * -1,
+                    x;
+
+                for (x = 0; x < diff; x++) {
+                    self.actions["move" + dir]();
+                }
+            });
+
+        };
+
+        return {
+            attachEvents: attachEvents
+        };
+
+    })();
+
+
+    self.controls = (function () {
+
+        var attachEvents = function () {
+
+            $(".cbcontrol").on("click", function (event) {
+
+                var dir = self.utils.getDir(this.id),
+                    active = $(".cbImage.active"),
+                    makeActive = dir === "Right" ? active.prev(".cbImage") : active.next(".cbImage");
+
+                if (makeActive.length > 0) {
+                    self.actions["move" + dir]();
+                }
+            });
+
+            $(".stage").on("touchstart", function (event) {
+                console.log("touch start");
+            });
+
+        };
+
+        return {
+            attachEvents: attachEvents
+        };
+    })();
+
+    self.init = (function () {
+
+
+
+        var $covers = $(".cbImage"),
+            setStageDims = function () {
+                self.state.stageDim = { x: $(".stage").outerWidth(), y: $(".stage").outerHeight() };
+            },
+            setCoverDims = function ($active) {
+                self.state.coverDim = { x: $active.outerWidth(), y: $active.outerHeight() };
+            },
+            getSheet = function () {
+                var l = $("#cbGeneratedClasses").length;
+                if (l === 0) {
+                    var $newsheet = $("<style type='text/css' id='cbGeneratedClasses'></style>"),
+                        ss = $newsheet.appendTo("head")[0].sheet;
+                }
+                else {
+                    $("#cbGeneratedClasses").text('');
+                    var ss = $("#cbGeneratedClasses")[0].sheet;
+                }
+                return ss;
+            },
+            generateClasses = function () {
+
+                var leftfac,
+                    rightfac,
+                    x,
+                    z = 100,//TODO figure equation for zindex, increase closer to activeIndex, decrease after
+                    cvrLength = $covers.length,
+                    l = cvrLength * 2,
+                    ss = getSheet(),
+                    al;
+
+                al = (self.state.stageDim.x / 2) - (self.state.coverDim.x / 2);
+
+                ss.insertRule(".stage .active{left:" + al + "px;}", 0);
+
+                for (x = 0; x < l; x++) {
+
+                    //create an inactive class for each direction
+                    //for every element in the set
+                    leftfac = al - ((self.state.coverDim.x * x) / 2) - (self.state.coverDim.x / 2);
+                    rightfac = al + ((self.state.coverDim.x * x) / 2) + (self.state.coverDim.x / 2);
+                    ss.insertRule(".inactiveLeft" + x + "{left:" + leftfac + "px;z-index:" + z + ";}", 0);
+                    ss.insertRule(".inactiveRight" + x + "{left:" + rightfac + "px;z-index:" + z + ";}", 0);
+
+                }
+
+            },
+            doInit = function () {
+
+                var $active = $covers.filter(".active"),
+                    activeIndex = $covers.index($active) !== -1 ? $covers.index($active) : 0;
+
+                setStageDims();
+                setCoverDims($active);
+
+                generateClasses();
+
+                self.controls.attachEvents();
+
+                self.imgs.attachEvents();
+
+                self.state.activeIndex = activeIndex;
+
+                self.actions.doMove();
+
+            }(),
+            reInit = function () {
+
+                var $active = $covers.filter(".active");
+
+                setStageDims();
+                setCoverDims($active);
+
+                generateClasses();
+
+            };
+
+        $(window).on("resize", function (event) {
+            self.init.reInit();
+        });
+
+        return {
+            reInit: reInit
+        };
+
+    })();
+
+})(jQuery);
+</script>
+<!-- <script type="text/javascript">
+  var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:4,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[3000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+</script> -->
+<script type="text/javascript">
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".dropdown").hover(
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
+            $(this).toggleClass('open');
+        },
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
+            $(this).toggleClass('open');
+        }
+    );
+});
+</script>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+
+
+     {% endblock %}
+  </body>
+  </html>
