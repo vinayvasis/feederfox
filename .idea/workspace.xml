@@ -2,85 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d0bbaef-0baf-4829-811f-1b5a85ad9514" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/ajax-loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/css/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/css/banner.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/css/bootstrap-theme.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/css/bootstrap3-showmanyslideonecarousel.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/css/classy-nav.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/css/core.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/css/dropdown-hover-menu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/css/owl.carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/css/owl.theme.default.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/css/sideslider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/css/slick.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/css/slider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/css/social.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/css/test.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/css/thumbnail-slider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/css/thumbs2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/font/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/font/vjs.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/font/vjs.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/font/vjs.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/fonts/dist/css/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/fonts/dist/slick.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/fonts/helvetica_neu_bold-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/fonts/helvetica_neu_bold-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/fonts/helveticaneue_medium-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/fonts/helveticaneue_medium-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/fonts/slick.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/fonts/slick.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/fonts/slick.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/fonts/slick.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/css/owl.video.play.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/fonts/vjs.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/img/about/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/img/about/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/img/about/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/img/about/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/img/header-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/img/logos/creative-market.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/img/logos/designmodo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/img/logos/envato.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/img/logos/themeforest.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/img/map-image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/img/portfolio/01-full.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/img/portfolio/01-thumbnail.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/img/portfolio/02-full.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/img/portfolio/02-thumbnail.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/img/portfolio/03-full.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/img/portfolio/03-thumbnail.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/img/portfolio/04-full.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/img/portfolio/04-thumbnail.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/img/portfolio/05-full.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/img/portfolio/05-thumbnail.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/img/portfolio/06-full.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/img/portfolio/06-thumbnail.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/img/team/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/img/team/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dist/img/team/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/dist/css/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/dist/css/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/dist/css/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/dist/css/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/dist/css/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/dist/css/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/dist/css/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/dist/css/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/dist/css/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FeederFoxnew/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/FeederFoxnew/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/dist/css/agency.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/dist/css/agency.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/dist/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/dist/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/dist/css/new_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/dist/css/new_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/dist/css/style_nw.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/css/css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/css/css/banner.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/css/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/css/css/bootstrap-theme.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/css/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/css/css/bootstrap-theme.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/css/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/css/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/css/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/css/css/bootstrap3-showmanyslideonecarousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/css/css/classy-nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/dist/css/fonts/vjs.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/css/css/core.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/css/css/dropdown-hover-menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/css/css/owl.carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/css/css/owl.theme.default.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/css/css/sideslider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/css/css/slick.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/css/css/slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/css/css/social.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/css/css/test.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/css/css/thumbnail-slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/css/css/thumbs2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/css/fonts/dist/css/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/static/dist/css/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/css/fonts/dist/slick.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/css/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/static/dist/css/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/dist/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/dist/css/font-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/staticfiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/staticfiles.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -91,28 +52,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="slick.ttf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/dist/css/fonts/slick.ttf">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="font-awesome.min.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/dist/css/font-awesome.min.css">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FeederFoxnew/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+            <state relative-caret-position="476">
+              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fontawesome-webfont.eot" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/dist/fonts/fontawesome-webfont.eot">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="fontawesome-webfont.ttf" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/dist/fonts/fontawesome-webfont.ttf">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/home/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="564">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -143,14 +98,14 @@
         <option value="$PROJECT_DIR$/home/views.py" />
         <option value="$PROJECT_DIR$/home/admin.py" />
         <option value="$PROJECT_DIR$/home/templates/publishersignup.html" />
-        <option value="$PROJECT_DIR$/home/templates/base.html" />
         <option value="$PROJECT_DIR$/runtime.txt" />
         <option value="$PROJECT_DIR$/FeederFoxnew/wsgi.py" />
         <option value="$PROJECT_DIR$/static/dist/css/agency.css" />
         <option value="$PROJECT_DIR$/home/templates/index.html" />
         <option value="$PROJECT_DIR$/static/dist/css/new_style.css" />
-        <option value="$PROJECT_DIR$/FeederFoxnew/settings.py" />
         <option value="$PROJECT_DIR$/static/dist/css/font-awesome.min.css" />
+        <option value="$PROJECT_DIR$/FeederFoxnew/settings.py" />
+        <option value="$PROJECT_DIR$/home/templates/base.html" />
       </list>
     </option>
   </component>
@@ -190,20 +145,18 @@
             <path>
               <item name="FeederFoxnew" type="b2602c69:ProjectViewProjectNode" />
               <item name="FeederFoxnew" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FeederFoxnew" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FeederFoxnew" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FeederFoxnew" type="b2602c69:ProjectViewProjectNode" />
               <item name="FeederFoxnew" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FeederFoxnew" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FeederFoxnew" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="fonts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -220,11 +173,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\FeederFoxnew\static\dist\css\fonts" />
       <recent name="C:\Users\Lenovo\FeederFoxnew\static\dist\css" />
       <recent name="C:\Users\Lenovo\FeederFoxnew\static\dist\fonts" />
       <recent name="C:\Users\Lenovo\FeederFoxnew\static\dist" />
       <recent name="C:\Users\Lenovo\FeederFoxnew\static\dist\css\css" />
-      <recent name="C:\Users\Lenovo\FeederFoxnew\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -310,9 +263,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/dist/css/css/owl.carousel.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/dist/css/fonts/helvetica_neu_bold-webfont.woff2">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -336,6 +286,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#646#687#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -354,6 +307,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#299#334#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -382,13 +338,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="679">
           <caret line="48" column="103" selection-start-line="48" selection-start-column="103" selection-end-line="48" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
@@ -426,6 +375,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
           <caret line="315" selection-start-line="315" selection-end-line="327" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#li#1;n#ul#0;n#div#1;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#li#0;n#ul#0;n#li#1;n#ul#0;n#div#1;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#li#1;n#ul#0;n#div#1;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#li#1;n#ul#0;n#li#1;n#ul#0;n#div#1;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#1;n#div#0;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -479,13 +435,6 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/static/dist/css/style_nw.css" />
-    <entry file="file://$PROJECT_DIR$/FeederFoxnew/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/dist/css/new_style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -511,9 +460,6 @@
     <entry file="file://$PROJECT_DIR$/static/dist/css/css/classy-nav.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/dist/css/fonts/slick.ttf">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/dist/css/font-awesome.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -526,6 +472,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/dist/fonts/fontawesome-webfont.ttf">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/dist/css/fonts/slick.ttf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/dist/css/fonts/glyphicons-halflings-regular.woff2">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FeederFoxnew/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
